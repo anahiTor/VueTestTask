@@ -1,0 +1,27 @@
+@import './variables';
+@import 'mixins.scss';
+
+.header {
+  width: 100%;
+  margin-bottom: 3rem;
+  color: $PRIMARY;
+}
+
+.btn {
+  background-color: $SECONDARY;
+  border: 1px solid $PRIMARY;
+}
+
+.form-input {
+  box-shadow: none;
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    border-color: $BORDERLINE;
+    outline: $BORDERLINE;
+  }
+}
+
+.section {
+  margin: 3rem 0;
+}
